@@ -9,7 +9,18 @@
 target_link_libraries(your_target_name PRIVATE logac)
 ```
 
-并且可以找到 logac.h 头文件。
+并且可以找到 includes/logac.h 头文件。
+
+如果没有，可以通过源码编译：
+
+```bash
+cd logac
+mkdir build && cd build
+cmake ..
+cmake --build .
+```
+
+logac.h 头文件可以在includes目录下找到。
 
 您的程序可以像这样使用logac库：
 

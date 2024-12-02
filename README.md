@@ -11,6 +11,17 @@ target_link_libraries(your_target_name PRIVATE logac)
 ```
 and can find the logac.h header file.
 
+If not, you can build it from source:
+
+```bash
+cd logac
+mkdir build && cd build
+cmake ..
+cmake --build .
+```
+
+The logac.h header file can be found in the includes directory.
+
 Your program can use the logac library like this:
 
 ```c
