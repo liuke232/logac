@@ -94,13 +94,14 @@ bool loadLogConfig(const char* config_file)
     strcpy(logfile_namepat, "{host}_{program}_{date}_{time}_{num}.log");
     logfile_maxsize = 500 * 1024 * 1024;
     logfile_interval = 24 * 60 * 60;
+    FILE* fp_cfg = NULL;
 
     if (config_file == NULL) {
         // 使用默认配置
         goto ok;
     }
 
-    FILE* fp_cfg = fopen(config_file, "r");
+    fp_cfg = fopen(config_file, "r");
     if (!fp_cfg) {
         fprintf(stderr, "Open Log Config Failed!\n");
         return false;
