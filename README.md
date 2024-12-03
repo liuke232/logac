@@ -1,6 +1,6 @@
 # logac
 
-A logging library that uses a dedicated thread to output logs, avoiding conflicts from multi-threaded outputs.
+A logging library for C that uses a dedicated thread to output logs, avoiding conflicts from multi-threaded outputs.
 
 ## Simple Usage
 
